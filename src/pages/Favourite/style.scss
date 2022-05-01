@@ -1,0 +1,15 @@
+.favourite__top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    img{
+        margin-right: 20px;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
+.favourite__cards{
+    display: flex;
+    flex-wrap: wrap;
+}

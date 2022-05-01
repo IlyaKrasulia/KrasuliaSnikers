@@ -1,0 +1,187 @@
+li{
+    list-style: none;
+}
+.App{
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    max-width: 1080px;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 44px;
+    padding-bottom: 44px;;
+    &__left{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 16px;
+        }
+        p{
+            width: 26vh;
+            font-size: 14px;
+            color: #9D9D9D;
+            font-weight: 400;
+        }
+        h3{
+            width: 26vh;
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 19%;
+        li{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            p{
+                margin-left: 10px;
+                color: #5C5C5C;
+                font-size: 600px;
+                font-size: 14px;
+            }
+        }
+        img{
+            cursor: pointer;
+        }
+    }
+    &__line{
+        border-top: 1px solid #EAEAEA;
+        padding-bottom: 45px;
+    }
+}
+.all-shoes{
+    &__cards{
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 38px;
+        font-weight: 700;
+    }
+    &__top{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .search{
+            display: flex;
+            align-items: center;
+            border: 1px solid #F3F3F3;
+            padding: 13px 18px;
+            border-radius: 10px;
+            padding-right: 0;
+            img{
+                cursor: pointer;
+            }
+            input{
+                border: none;
+                font-size: 14px;
+                &::placeholder{
+                    color: #C4C4C4;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                outline: none;
+            }
+            img{
+                margin-right: 14px;
+            }
+        }
+    }
+}
+.basket{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000079;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            cursor: pointer;
+        }
+    }
+    &__cards{
+        overflow: auto;
+        height: 60vh;
+    }
+    &__modal{
+        background-color: #fff;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 385px;
+        height: 100vh;
+        padding: 30px;
+        box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+        h2{
+            margin-bottom: 30px;
+        }
+        &--top{
+            position: absolute;
+            bottom: 30px;
+            width: 23%;
+            li{
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                span{
+                    border-bottom: 1px dashed #DFDFDF;
+                    width: 55%;
+                }
+            }
+            button{
+                width: 100%;
+                padding: 18px 0;
+                background-color: #9DD558;
+                border-radius: 18px;
+                border: none;
+                color: #fff;
+                font-weight: 600;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                &:disabled{
+                    animation: button-loading 0.6s ease-in-out infinite;
+                    cursor: default;
+                }
+                img{
+                    position: relative;
+                    left: 20%;
+                }
+            }
+        }
+    }
+}
+@keyframes button-loading {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: .7;
+    }
+    100%{
+        opacity: 1;
+    }
+}

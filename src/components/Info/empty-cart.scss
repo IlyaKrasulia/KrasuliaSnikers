@@ -1,0 +1,29 @@
+.entry__cart{
+    text-align: center;
+    margin-top: 20vh;
+    img{
+        margin-bottom: 20px;
+    }
+    h3{
+        display: block;
+        margin: 9px;
+        font-size: 22px;
+    }
+    p{
+        opacity: .6;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    button{
+        width: 245px;
+        padding: 20px 0;
+        background-color: #9DD558;
+        border-radius: 18px;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
